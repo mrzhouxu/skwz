@@ -1,10 +1,353 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background: url(img/html_bg.jpg) repeat-x;">
 <head>
-    <meta charset="UTF-8">
-    <title>AAA</title>
-</head>
-<body>
+	<meta charset="UTF-8">
+	<title>Documentzhouxu</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<link rel="stylesheet" href="css/base.css">
+	<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/lbt.js"></script>
+	<style>
 
+		.row_one{
+			width: 374px;
+			height: 392px;
+			background: #f4f4f4;
+			margin-top:38px;
+			margin-bottom: 44px; 
+			float: left;
+		}
+		.middle{
+			margin-left: 8px;
+			margin-right: 8px;
+		}
+		.row_two{
+			width: 374px;
+			height: 300px;
+			background: #f4f4f4;
+			float: left;
+		}
+		#show_img{
+			width: 100%;
+			height: 85%;
+		}
+		#show_img img{
+			width: 100%;
+			height: 100%;
+		}
+		#img_title{
+			width: 100%;
+			height: 15%;
+			text-align: center;
+			font-size: 18px;
+			color: #3d3c3c;
+			border-bottom: 12px solid #25908c;
+			box-sizing: border-box;
+			line-height: 46px;
+		}
+		#xyxw{
+			border-bottom: 8px solid #025621;
+			box-sizing: border-box;
+		}
+		#tzgg{
+			border-bottom: 8px solid #06415d;
+			box-sizing: border-box;
+		}
+		#kyzx{
+			border-bottom: 8px solid #b55500;
+			box-sizing: border-box;
+		}
+		#djsz{
+			border-bottom: 8px solid #d4bc7e;
+			box-sizing: border-box;
+		}
+		#jyxx{
+			border-bottom: 8px solid #812d1f;
+			box-sizing: border-box;
+		}
+
+
+		.title{
+			width: 372px;
+			height: 48px;
+			background: #dddddd url(img/content_tb.png) no-repeat;
+			font-size: 20px;
+			line-height: 48px;
+		}
+		.title span a{
+			color: black;
+		}
+		#xyxw>div:first-child{
+			background-position: 4px 0;
+		}
+		#tzgg>div:first-child{
+			background-position: 4px -95px;
+		}
+		#kyzx>div:first-child{
+			background-position: 4px -48px;
+		}
+		#djsz>div:first-child{
+			background-position: 4px -145px;
+		}
+		#jyxx>div:first-child{
+			background-position: 4px -190px;
+		}
+		
+		/*这里解决IE8不支持CSS3选择器*/
+		.title span{
+			margin-left: 130px;
+		}
+		.title span:first-child{
+			margin-left: 70px;
+		}
+		#content>div{
+			/*box-shadow: 4px 10px 14px #888888;*/
+			-webkit-box-shadow: 4px 10px 14px #888888;
+			-moz-box-shadow: 4px 10px 14px #888888;
+			box-shadow: 4px 10px 14px #888888;
+			filter: 
+			progid:DXImageTransform.Microsoft.Shadow(Color=#000000, Strength=14, Direction=90),
+			progid:DXImageTransform.Microsoft.Shadow(Color=#000000, Strength=14, Direction=180);
+		}
+		#content>div>ul{
+			padding-left: 32px;
+		    font-size: 18px;
+		    color: #3d3c3c;
+		    line-height: 54px;
+		}
+
+		#content>div>ul>li{
+			padding-right: 92px;
+			white-space: nowrap;
+		    text-overflow: ellipsis;
+		    overflow: hidden;
+		    background: url(img/content_tb.png) no-repeat;
+		}
+		#content>div>ul>li a{
+			color: #3d3c3c;
+		}
+		#content>#xyxw>ul>li{
+			background-position: 280px -290px;
+		}
+		#content>#tzgg>ul>li{
+			background-position: 280px -400px;
+		}
+		#content>#kyzx>ul>li{
+			background-position: 280px -240px;
+		}
+		#content>#djsz>ul>li{
+			background-position: 280px -455px;
+		}
+		#content>#jyxx>ul>li{
+			background-position: 280px -345px;
+		}
+		
+
+
+	</style>
+</head>
+<body style="background: url(img/body_bg.jpg) repeat-x;">
+	<div id="logo">
+		<img src="img/logo.png" alt="">
+	</div>
+	<div id="nav">
+		<ul class="clear">
+			<span class="nav_home"></span>
+			<li><a href="">院校概况</a>
+				<ul>
+					<li><a href="">学校简介</a></li>
+					<li><a href="">大学章程</a></li>
+					<li><a href="">基本数据</a></li>
+					<li><a href="">学校领导</a></li>
+				</ul>
+			</li>
+			<li><a href="">师资队伍</a>
+				<ul>
+					<li><a href="">学校简介</a></li>
+					<li><a href="">大学章程</a></li>
+				</ul>
+			</li>
+			<li><a href="">学科专业</a>
+				<ul>
+					<li><a href="">学校简介</a></li>
+					<li><a href="">大学章程</a></li>
+					<li><a href="">基本数据</a></li>
+					<li><a href="">学校领导</a></li>
+					<li><a href="">学校简介</a></li>
+					<li><a href="">大学章程</a></li>
+					<li><a href="">基本数据</a></li>
+					<li><a href="">学校领导</a></li>
+				</ul>
+			</li>
+			<li><a href="">教育教学</a>
+				<ul>
+					<li><a href="">学校简介</a></li>
+					<li><a href="">大学章程</a></li>
+					<li><a href="">基本数据</a></li>
+					<li><a href="">学校领导</a></li>
+				</ul>
+			</li>
+			<li><a href="">科学研究</a>
+				<ul>
+					<li><a href="">学校简介</a></li>
+
+				</ul>
+			</li>
+			<li><a href="">党团建设</a>
+				<ul>
+					<li><a href="">学校简介</a></li>
+					<li><a href="">大学章程</a></li>
+					<li><a href="">基本数据</a></li>
+					<li><a href="">学校领导</a></li>
+				</ul>
+			</li>
+			<li><a href="">学生工作</a>
+				<ul>
+					<li><a href="">学校简介</a></li>
+					<li><a href="">大学章程</a></li>
+					<li><a href="">基本数据</a></li>
+					<li><a href="">学校领导</a></li>
+				</ul>
+			</li>
+			<li><a href="">招生就业</a>
+				<ul>
+					<li><a href="">学校简介</a></li>
+					<li><a href="">大学章程</a></li>
+					<li><a href="">基本数据</a></li>
+					<li><a href="">学校领导</a></li>
+				</ul>
+			</li>
+			<li><a href="">招生就业</a>
+				<ul>
+					<li><a href="">学校简介</a></li>
+					<li><a href="">大学章程</a></li>
+					<li><a href="">基本数据</a></li>
+					<li><a href="">学校领导</a></li>
+				</ul>
+			</li>
+			<li><a href="">招生就业</a>
+				<ul>
+					<li><a href="">学校简介</a></li>
+					<li><a href="">大学章程</a></li>
+					<li><a href="">基本数据</a></li>
+					<li><a href="">学校领导</a></li>
+				</ul>
+			</li>
+			<div class="nav_border"></div>
+		</ul>
+	</div>
+	<div id="banner">
+	  	<div class="banner">
+		    <ul class="img">
+		      	<li><img src="img/lbt_img/1.png" alt=""></li>
+				<li><img src="img/lbt_img/2.png" alt=""></li>
+				<li><img src="img/lbt_img/3.png" alt=""></li>
+				<li><img src="img/lbt_img/1.png" alt=""></li>
+				<li><img src="img/lbt_img/2.png" alt=""></li>
+				<li><img src="img/lbt_img/3.png" alt=""></li>
+		    </ul>
+		    <ul class="num">
+		    </ul>
+		    <div class="btn btn_l">&lt;</div>
+		    <div class="btn btn_r">&gt;</div>
+		</div>
+	</div>
+	<div id="content" class="clear">
+		<div class="row_one">
+			<div id="show_img">
+				<img src="img/lbt_img/1.png" alt="">
+			</div>
+			<div id="img_title">
+				校党委书记周志远到辉县百农
+			</div>
+		</div>
+		<div id="xyxw" class="row_one middle">
+			<div class="title">
+				<span><a href="">学院新闻</a></span>
+				<span><a href="">More+</a></span>
+			</div>
+			<ul>
+				<li><a href="">校党委书记周志远到辉县百农校党委书记周志远到辉县百农...</a></li>
+				<li><a href="">校党委书记周志远到辉县百农...</a></li>
+				<li><a href="">校党委书记周志远到辉县百农...</a></li>
+				<li><a href="">校党委书记周志远到辉县百农...</a></li>
+				<li><a href="">校党委书记周志远到辉县百农...</a></li>
+				<li><a href="">校党委书记周志远到辉县百农...</a></li>
+			</ul>
+		</div>
+		<div id="tzgg" class="row_one">
+			<div class="title">
+				<span><a href="">通知公告</a></span>
+				<span><a href="">More+</a></span>
+			</div>
+			<ul>
+				<li><a href="">校党委书记周志远到辉县百农校党委书记周志远到辉县百农...</a></li>
+				<li><a href="">校党委书记周志远到辉县百农...</a></li>
+				<li><a href="">校党委书记周志远到辉县百农...</a></li>
+				<li><a href="">校党委书记周志远到辉县百农...</a></li>
+				<li><a href="">校党委书记周志远到辉县百农...</a></li>
+				<li><a href="">校党委书记周志远到辉县百农...</a></li>
+			</ul>
+		</div>
+		<div id="kyzx" class="row_two">
+			<div class="title">
+				<span><a href="">科研中心</a></span>
+				<span><a href="">More+</a></span>
+			</div>
+			<ul>
+				<li><a href="">校党委书记周志远到辉县百农校党委书记周志远到辉县百农...</a></li>
+				<li><a href="">校党委书记周志远到辉县百农...</a></li>
+				<li><a href="">校党委书记周志远到辉县百农...</a></li>
+				<li><a href="">校党委书记周志远到辉县百农...</a></li>
+			</ul>
+		</div>
+		<div id="djsz" class="row_two middle">
+			<div class="title">
+				<span><a href="">党建思政</a></span>
+				<span><a href="">More+</a></span>
+			</div>
+			<ul>
+				<li><a href="">校党委书记周志远到辉县百农校党委书记周志远到辉县百农...</a></li>
+				<li><a href="">校党委书记周志远到辉县百农...</a></li>
+				<li><a href="">校党委书记周志远到辉县百农...</a></li>
+				<li><a href="">校党委书记周志远到辉县百农...</a></li>
+			</ul>
+		</div>
+		<div id="jyxx" class="row_two">
+			<div class="title">
+				<span><a href="">就业信息</a></span>
+				<span><a href="">More+</a></span>
+			</div>
+			<ul>
+				<li><a href="">校党委书记周志远到辉县百农校党委书记周志远到辉县百农...</a></li>
+				<li><a href="">校党委书记周志远到辉县百农...</a></li>
+				<li><a href="">校党委书记周志远到辉县百农...</a></li>
+				<li><a href="">校党委书记周志远到辉县百农...</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="link" class="clear">
+		<ul class="clear">
+			<li><a href="">协同创新中心</a></li>
+			<li><a href="">杂交小麦中心</a></li>
+			<li><a href="">省重点实验室</a></li>
+			<li><a href="">作物基因编辑中心</a></li>
+		</ul>
+	</div>
+	<div id="footer">
+		<div id="footer_content" class="clear">
+			<div>
+				<span>河南科技学院生命科技学院</span>
+				<span>地址：河南省新乡市华兰大道东段</span>
+				<span>Email：sky@hist.edu.cn</span><br>
+				<span>技术支持：<a href="http://marchsoft.cn/" style="color: white;">三月软件</a></span>
+				<span>邮编：453003</span>
+				<span>电话：0373-3040337</span>
+			</div>
+			<div>
+				<img src="img/erweima.png" alt="" style="width: 100px;height: 100px;">
+			</div>
+		</div>
+	</div>
 </body>
 </html>
